@@ -5,7 +5,7 @@ import { AllocationRow } from "./AllocationRow";
 interface Props {
   allocations: Allocation[];
   now: number;
-  onRelease: (id: number, msisdn: string) => void;
+  onRelease: (id: number, msisdn: string) => Promise<void>;
   onShowQR: (allocation: Allocation) => void;
 }
 
